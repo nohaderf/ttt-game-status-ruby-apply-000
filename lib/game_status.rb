@@ -63,7 +63,8 @@ def over?(board)
 end
 
 def winner(board)
-  winner = won?(board) 
-    return 
+  winner_index = won?(board)
+  if won?(board) 
+    return board[winner_index[0]] 
   
 end
