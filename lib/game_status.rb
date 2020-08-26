@@ -40,6 +40,6 @@ end
 
 def full?(board)
   board.all? do |space|
-    space == "X" || space == O || space == nil
+    space == "X" || space == "O" || space == nil
   end
 end
