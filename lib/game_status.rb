@@ -4,3 +4,22 @@ def position_taken?(board, index)
 end
 
 # Define your WIN_COMBINATIONS constant
+
+WIN_COMBINATIONS = [
+  [0,1,2], # top row wins
+  [3,4,5], # middle row wins
+  [6,7,8], # bottom row wins
+  [0,3,6], # left column wins
+  [1,4,7], # middle column wins
+  [2,5,8], # right column wins
+  [0,4,8], # left diagonal wins
+  [2,4,6]  # right diagnol wins
+]
+
+def won?(board)
+
+
+
+## won? method should accept a board as an argument and return false/nil if there is no win combination present in the board
+## returns how they won -- by means of the winning combination.
+## iterate over the possible win combinations defined in WIN_COMBINATIONS and check if the board has the same player token in each index of a winning combination.
