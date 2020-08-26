@@ -40,4 +40,6 @@ end
 
 def full?(board)
   board.all? do |space|
-    space
+    space == " " || space == "" || space == nil
+  end
+end
