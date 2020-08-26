@@ -28,6 +28,8 @@ def won?(board)
     
   if position_1 == "X" && position_2 == "X" && position_3 == "X"
       return win_combination
+    elsif position_1 == "0" && position_2 == "0" && position_3 == "0"
+      retirn win_combination
     else 
       return false
     end
