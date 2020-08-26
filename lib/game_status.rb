@@ -71,4 +71,4 @@ end
 
 ## need to call won? method
 ## to determine and return if "X" or "O" won, we need to access one of the indexes in the won?(board) array.
-## All indexindex [0] used
+## all indices in won? have the same character (either all "X" or all "O"). index [0] was used.
