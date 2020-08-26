@@ -43,3 +43,5 @@ def full?(board)
     space == "X" || space == "O" || space == nil
   end
 end
+
+def draw?(board)
