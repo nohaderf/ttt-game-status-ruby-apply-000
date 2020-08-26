@@ -16,7 +16,22 @@ WIN_COMBINATIONS = [
   [2,4,6]  # right diagnol wins
 ]
 
-
+def won?(board)
+  WIN_COMBINATIONS.each do |win_combination|
+    win_index_1 = win_combination[0] # grab each index from each win_combination [child array]
+    win_index_2 = win_combination[1]
+    win_index_3 = win_combination[2]
+    
+    position_1 = board[win_index_1] # load the value onto the board
+    position_2 = board[win_index_2]
+    position_3 = board[win_index_3]
+    
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
+      return win_combination
+    else 
+      return false
+    end
+  end 
 
 ## won? method should accept a board as an argument and return false/nil if there is no win combination present in the board
 ## returns how they won -- by means of the winning combination.
