@@ -32,6 +32,7 @@ def won?(board)
       return false
     end
   end 
+end
 
 ## won? method should accept a board as an argument and return false/nil if there is no win combination present in the board
 ## returns how they won -- by means of the winning combination.
