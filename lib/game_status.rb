@@ -39,5 +39,5 @@ end
 ## iterate over the possible win combinations defined in WIN_COMBINATIONS and check if the board has the same player token in each index of a winning combination.
 
 def full?(board)
-  board.all? do |full|
-    
+  board.all? do |space|
+    space
