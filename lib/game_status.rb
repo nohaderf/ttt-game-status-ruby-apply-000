@@ -31,9 +31,9 @@ def won?(board)
     elsif position_1 == "0" && position_2 == "0" && position_3 == "0"
       return win_combination
     else 
-      return false
     end
   end 
+  return false
 end
 
 ## won? method should accept a board as an argument and return false/nil if there is no win combination present in the board
