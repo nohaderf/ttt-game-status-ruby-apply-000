@@ -17,7 +17,10 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-
+  WIN_COMBINATIONS.each do |win_combination|
+    win_index_1 = win_combination[0]
+  end 
+end
 
 
 ## won? method should accept a board as an argument and return false/nil if there is no win combination present in the board
