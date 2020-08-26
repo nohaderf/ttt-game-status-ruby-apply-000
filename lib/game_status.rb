@@ -37,8 +37,8 @@ def won?(board)
 end
 
 ## won? method should accept a board as an argument and return false/nil if there is no win combination present in the board
-## returns how they won -- by means of the winning combination.
-## iterate over the possible win combinations defined in WIN_COMBINATIONS and check if the board has the same player token in each index of a winning combination.
+## returns how they won -- by means of the win_combination. (done through return win_combination)
+## iterate over the possible win_combinations defined in WIN_COMBINATIONS and check if the board has the same player token in each index of a winning combination. --> ie ) position_1 == "O" && position_2 == "O"
 
 def full?(board)
   board.all? do |space|
@@ -68,3 +68,7 @@ def winner(board)
     return board[winner_index[0]] 
   end
 end
+
+## need to call won? method
+## to determine and return if "X" or "O" won, we need to access one of the indexes in the won?(board) array.
+## All indexindex [0] used
